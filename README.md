@@ -1,8 +1,6 @@
-# React + Vite
+# CRUD API Bank Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples com intuito de criar uma interface utilizável para API do desafio final do módulo 2 do curso backend da Cubos Academy.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologias e bibliotecas utiliziadas no Frontend: React, Vite, React Router, MUI, Axios, Javascript.
+Tecnologias e bibliotecas utilizadas no Backend: Node, Express, Nodemon, Date-fns.
