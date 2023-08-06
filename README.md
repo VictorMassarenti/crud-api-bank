@@ -1,5 +1,7 @@
 CRUD com Next.js, Material-UI, Node.js e Express
 
+Esse é um projeto simples, com intuito de trazer uma interface para utilização da API criada para o desafio de conclusão do módulo 2 do curso de Backend da Cubos Academy.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
