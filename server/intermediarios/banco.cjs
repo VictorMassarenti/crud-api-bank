@@ -1,5 +1,5 @@
-const bancodedados = require('../bancodedados')
-const { buscarConta } = require('../utilitarios/buscarConta')
+const bancodedados = require('../bancodedados.cjs')
+const { buscarConta } = require('../utilitarios/buscarConta.cjs')
 
 const validarCriarConta = (req, res, next) => {
     const respostaErro400 = (texto) => {

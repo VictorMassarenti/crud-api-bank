@@ -1,4 +1,4 @@
-const { buscarConta } = require("../utilitarios/buscarConta")
+const { buscarConta } = require("../utilitarios/buscarConta.cjs")
 
 const validar = (req, res, next) => {
     const { numero_conta, senha } = req.query

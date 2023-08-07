@@ -1,4 +1,4 @@
-const bancodedados = require('../bancodedados')
+const bancodedados = require('../bancodedados.cjs')
 
 const buscarConta = (numero) => {
     const { contas } = bancodedados

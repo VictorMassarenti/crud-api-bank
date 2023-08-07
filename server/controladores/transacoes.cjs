@@ -1,6 +1,6 @@
-let bancodedados = require('../bancodedados')
-const { buscarConta } = require('../utilitarios/buscarConta')
-const { formatarDataHora } = require('../utilitarios/formatarDataHora')
+let bancodedados = require('../bancodedados.cjs')
+const { buscarConta } = require('../utilitarios/buscarConta.cjs')
+const { formatarDataHora } = require('../utilitarios/formatarDataHora.cjs')
 
 const depositar = (req, res) => {
     const { numero_conta, valor } = req.body

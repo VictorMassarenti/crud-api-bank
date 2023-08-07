@@ -1,6 +1,6 @@
 const { parse, format } = require('date-fns')
-let bancodedados = require('../bancodedados')
-const { buscarConta } = require('../utilitarios/buscarConta')
+let bancodedados = require('../bancodedados.cjs')
+const { buscarConta } = require('../utilitarios/buscarConta.cjs')
 let numConta = 1
 
 const listarContas = (req, res) => {

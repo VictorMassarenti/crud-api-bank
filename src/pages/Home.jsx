@@ -1,4 +1,4 @@
-import { Button, ButtonGroup, Container, Typography } from '@mui/material';
+import { Button, Container, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
         }}
         >
             <Typography variant="h1" color='primary' gutterBottom> Bankademy </Typography>
-            <Link to={'/gerencia'}><Button>Gerência</Button></Link>
-            <Link to={'/cliente'}><Button>Cliente</Button></Link>
+            <Link to={'/gerencia'}><Button variant="text" size='large'>Gerência</Button></Link>
+            <Link to={'/cliente'}><Button variant="text" size='large'>Cliente</Button></Link>
         </Container>
     );
 }

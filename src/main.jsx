@@ -5,6 +5,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
+import Gerencia from './pages/Gerencia';
+import Clientes from './pages/Clientes';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -16,11 +18,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/gerencia",
-    element: 'Gerência',
+    element: <Gerencia />,
   },
   {
     path: "/cliente",
-    element: 'Cliente',
+    element: <Clientes />,
   }
 ]);
 

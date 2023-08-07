@@ -1,12 +1,12 @@
 const express = require('express')
 const rotas = express()
 // Controladores
-const { criarConta, editarConta, consultarSaldo, consultarExtrato, listarContas, deletarConta } = require('./controladores/contas')
-const { depositar, sacar, transferir } = require('./controladores/transacoes')
+const { criarConta, editarConta, consultarSaldo, consultarExtrato, listarContas, deletarConta } = require('./controladores/contas.cjs')
+const { depositar, sacar, transferir } = require('./controladores/transacoes.cjs')
 // Intermediários
-const intermediarioBanco = require('./intermediarios/banco')
-const intermediarioTransacoes = require('./intermediarios/transacoes')
-const intermediarioUsuario = require('./intermediarios/usuario')
+const intermediarioBanco = require('./intermediarios/banco.cjs')
+const intermediarioTransacoes = require('./intermediarios/transacoes.cjs')
+const intermediarioUsuario = require('./intermediarios/usuario.cjs')
 
 rotas.get('/contas', intermediarioBanco.validarSenha, listarContas)
 rotas.post('/contas', intermediarioBanco.validarCriarConta, criarConta)
