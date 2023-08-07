@@ -6,7 +6,7 @@ import theme from './theme';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import Gerencia from './pages/Gerencia';
-import Clientes from './pages/Clientes';
+import Clientes from './pages/Cliente';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
