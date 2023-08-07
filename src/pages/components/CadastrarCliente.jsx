@@ -8,13 +8,7 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 import api from "../services/api";
-import { format, parse } from "date-fns";
-
-function parseDate(date) {
-  const dataParse = parse(date, 'yyyy-MM-dd', new Date())
-  const response = format(dataParse, 'dd/MM/yyyy')
-  return response
-}
+import parseDateForServer from "../services/parseDateForServer";
 
 export default function CadastrarCliente() {
   const [nome, setNome] = useState('')
@@ -31,7 +25,7 @@ export default function CadastrarCliente() {
       .post("/contas", {
         nome,
         cpf,
-        data_nascimento: parseDate(data_nascimento),
+        data_nascimento: parseDateForServer(data_nascimento),
         telefone,
         email,
         senha
