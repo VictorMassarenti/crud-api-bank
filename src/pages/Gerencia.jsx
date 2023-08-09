@@ -1,5 +1,5 @@
-import { Box, Container, Paper, Tab, Tabs, Typography } from "@mui/material";
 import * as React from 'react';
+import { Box, Container, Paper, Tab, Tabs, Typography } from "@mui/material";
 import ListarTodosClientes from "./components/ListarTodosClientes";
 import CadastrarCliente from "./components/CadastrarCliente";
 

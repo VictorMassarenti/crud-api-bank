@@ -18,9 +18,11 @@ export default function CadastrarCliente() {
   const [email, setEmail] = useState('')
   const [senha, setSenha] = useState('')
   const [sendForm, setSendForm] = useState(true)
+  const [mensagemErro, setMensagemErro] = useState('')
 
   function handleSubmit(event) {
     event.preventDefault()
+    setMensagemErro('')
     api
       .post("/contas", {
         nome,
@@ -32,7 +34,7 @@ export default function CadastrarCliente() {
       })
       .then((response) => console.log(response.data))
       .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
+        setMensagemErro(err.response.data.mensagem);
       });
     setNome('')
     setCpf('')
@@ -100,7 +102,11 @@ export default function CadastrarCliente() {
       <br />
       <Button disabled={!senha} variant="outlined" type="submit">Cadastrar</Button>
       <br />
-      <Typography hidden={sendForm} color='secondary'>Cliente cadastrado com sucesso!</Typography>
+      {mensagemErro ?
+        <Typography hidden={sendForm} color='error.main'>{mensagemErro}</Typography> :
+        <Typography hidden={sendForm} color='success.main'>Cliente cadastrado com sucesso!</Typography>
+      }
+      
     </Box>
   )
 }
