@@ -20,5 +20,5 @@ Este é um projeto simples com intuito de criar uma interface utilizável para A
 * Não possui validação de dados no Client Side, para acelerar a produção da interface.
 * Não possui validação de acesso, para facilitar a utilização de todas as rotas da API.
 * Valor de depósito, saque, transferência deve ser preenchido em centavos.
-* Sem botão para voltar para endpoint '/'
+* Sem botão para voltar endpoint '/'
 * Funções de editar cliente, deletar cliente e consultar saldo que estão presentes na API não foram implementadas nesta interface.
