@@ -51,8 +51,8 @@ export default function Gerencia() {
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
+        width: {xs: 300, sm: 400, md: 450 },
         backgroundColor: '#6E8898',
-        width: '450px',
         borderRadius: '10px',
       }}>
         <Box sx={{ 
