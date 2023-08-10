@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Box, Container, Paper, Tab, Tabs, Typography } from "@mui/material";
 import Depositar from './components/Depositar';
+import Sacar from './components/Sacar';
+import Transferir from './components/Transferir';
+import Extrato from './components/Extrato';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -51,7 +54,6 @@ export default function Cliente() {
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#6E8898',
-        width: '450px',
         borderRadius: '10px',
       }}>
         <Box sx={{
@@ -73,13 +75,13 @@ export default function Cliente() {
             <Depositar />
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
-            Sacar
+            <Sacar />
           </CustomTabPanel>
           <CustomTabPanel value={value} index={2}>
-            Transferir
+            <Transferir />
           </CustomTabPanel>
           <CustomTabPanel value={value} index={3}>
-            Extrato
+            <Extrato />
           </CustomTabPanel>
         </Box>
       </Paper>
